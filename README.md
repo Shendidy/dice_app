@@ -39,6 +39,11 @@ So that I can keep track of past and previous rolls
 I want to record each dice roll
 
 
+V1.6:
+
+As a board game player,
+So that I know what my score is after I have rolled several dice
+I want to be able to get my current score
 
 
 

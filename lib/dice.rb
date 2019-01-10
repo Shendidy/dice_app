@@ -1,8 +1,10 @@
 class Dice
+
   def initialize(count = 1)
     @count = count
     @result = []
   end
+
   def roll
     return rand(6) + 1 if @count == 1
 
@@ -11,4 +13,9 @@ class Dice
     end
     @result
   end
+
+  def sumup
+    @result.inject(0){|sum,x| sum + x }
+  end
+
 end

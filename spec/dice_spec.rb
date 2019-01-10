@@ -46,4 +46,16 @@ RSpec.describe Dice do
     end
   end
 
+  context "V1.6: return total of all previous rolls" do
+    dice6 = Dice.new(2)
+    5.times {dice6.roll}
+    it "8. Should respond to the method" do
+      expect(dice6).to respond_to :sumup
+    end
+    it "9. Should return a number between 10 and 60 (inclusive)" do
+      #p dice6.sumup
+      expect(dice6.sumup).to be_between(10, 60)
+    end
+  end
+
 end
